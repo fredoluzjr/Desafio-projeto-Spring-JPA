@@ -1,0 +1,16 @@
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/academia?useTimezone=true&serverTimezone=UTC&useLegacyDate
+        username: postgres
+        password: admin
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+
+logging:
+    level:
+        org:
+            hibernate:
+                type: trace
